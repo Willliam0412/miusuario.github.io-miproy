@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gomitas Ginger Spark - Info</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: #fff;
+      max-width: 900px;
+      width: 100%;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      font-size: 34px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      background: linear-gradient(90deg, #ff6a00, #ffca28, #ff6a00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.35);
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 20px;
+      line-height: 1.7;
+      text-align: center;
+    }
+
+    .video-wrapper {
+      position: relative;
+      width: 80%;
+      max-width: 720px;
+      margin: 0 auto 30px auto;
+      padding-top: 45%;
+      overflow: hidden;
+    }
+
+    .video-wrapper video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+      object-fit: cover;
+      opacity: 0;
+      transform: scale(0.9);
+      animation: videoFadeZoom 1.2s ease-out forwards;
+      animation-delay: 0.5s;
+    }
+
+    @keyframes videoFadeZoom {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: linear-gradient(90deg, #ff6a00, #ffca28, #ff6a00);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 30px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-top: 15px;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(255,106,0,0.5);
+    }
+
+    .highlight {
+      font-size: 20px;
+      font-weight: 700;
+      color: #1877F2;
+      margin-top: 30px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>¡Descubre el sabor mágico!</h1>
+
+    <div class="video-wrapper">
+      <video controls>
+        <source src="assets/promo.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+
+    <p>
+      Nuestras gomitas medicinales naturales, elaboradas con hierbabuena, jengibre, miel y limón,
+      ofrecen una combinación refrescante y beneficiosa para tu bienestar.  
+      Su sabor único y su textura suave y masticable las convierten en la opción ideal para quienes buscan cuidarse de manera deliciosa y diferente.
+    </p>
+
+    <p>
+      Cada unidad pesa 8 gramos y viene en una práctica forma cuadrada, perfecta para darte esa dosis
+      de energía y salud que necesitas en tu día.  
+      Encuéntranos en la IET Puente de Piedra, sede principal.
+    </p>
+
+    <p class="highlight">¡Ven a disfrutar de una experiencia única que une sabor, salud y bienestar!</p>
+
+    <!-- Botón hacia redes -->
+    <a href="redes.html" class="btn">Ir a Redes Sociales</a>
+  </div>
+</body>
+</html>

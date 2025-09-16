@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gomitas Ginger Spark - Redes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background: linear-gradient(-45deg, #ece9e6, #ffffff, #2c2c2c, #1a1a1a);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+    }
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: 25px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+      padding: 40px 30px;
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+      backdrop-filter: blur(20px);
+      animation: flipIn 1.2s ease forwards;
+    }
+    @keyframes flipIn {
+      0% { opacity: 0; transform: rotateY(90deg) scale(0.8); }
+      60% { opacity: 1; transform: rotateY(-10deg) scale(1.05); }
+      100% { transform: rotateY(0deg) scale(1); }
+    }
+
+    h1 {
+      font-size: 34px;
+      font-weight: 700;
+      background: linear-gradient(90deg, #ff6a00, #ffca28, #ff6a00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 15px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.45);
+    }
+
+    p { 
+      color: #222; 
+      margin-bottom: 20px; 
+      font-size: 16px; 
+    }
+
+    .qr-image {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      margin-top: 10px;
+      margin-bottom: 25px;
+    }
+    .social-icons a {
+      text-decoration: none;
+      font-size: 26px;
+      width: 55px;
+      height: 55px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      color: white;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .social-icons .whatsapp { background: #25D366; }
+    .social-icons .facebook { background: #1877F2; }
+    .social-icons .instagram { 
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, 
+                  #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    }
+    .social-icons .tiktok { background: #000; }
+
+    .social-icons a:hover {
+      transform: translateY(-6px) scale(1.1);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+    }
+
+    /* Botón Volver */
+    .btn-volver {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 20px;
+      padding: 14px 28px;
+      background: linear-gradient(90deg, #ff6a00, #ffca28, #ff6a00);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 40px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .btn-volver i { font-size: 28px; }
+    .btn-volver:hover {
+      transform: scale(1.08);
+      box-shadow: 0 6px 20px rgba(255,106,0,0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Gomitas Ginger Spark</h1>
+    <p>¡Síguenos en nuestras redes sociales!</p>
+
+    <img src="gingerspark.jpg" alt="Gomitas Ginger Spark" class="qr-image">
+
+    <!-- 👇 Texto agregado -->
+    <p><strong>Haz clic en los íconos para seguirnos:</strong></p>
+
+    <div class="social-icons">
+      <a href="https://wa.me/qr/CSHGTTYHZFWUH1" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.facebook.com/share/17LamR2fcp/?mibextid=wwXIfr" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/gomitasgingerspark.oficial" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@gummies.ginger.sp" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i></a>
+    </div>
+
+    <!-- Botón volver -->
+    <a href="index.html" class="btn-volver"><i class="fas fa-arrow-left"></i> Volver</a>
+  </div>
+
+</body>
+</html>
